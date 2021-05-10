@@ -1,0 +1,73 @@
+body {
+    padding: 0 !important;
+    margin: 0;
+    background: #2d2d2d;
+}
+.navbar {
+    background:#6ab446 !important;
+    font-family:Oswald !important;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.btn-green{
+    background-color: #359603
+    ;
+}
+.btn{
+    color:white;
+}
+.btn-green:hover{
+    background-color: #6ab446;
+}
+
+.welcome{
+    color:white;
+    text-shadow: 1px 1px 8px #0e0d0d;
+}
+.footer-authorname{
+    
+    color:#2d2d2d;
+}
+.footer-authorname a {
+    text-decoration: none !important;
+    color:#2d2d2d !important;
+    font-weight: bold;
+    
+}
+.author{
+    color:#84eb50;
+    text-shadow: 1px 1px 3px #81ab50;
+}
+.logo-text{
+    margin-left:19rem;
+}
+.tutar{
+    text-decoration: none !important;
+    color:rgb(0, 162, 255);
+    
+    display: flex !important;
+    flex-basis: auto;
+    position:absolute;
+
+}
+.tutar2{
+    text-decoration: none !important;
+    color:rgb(0, 162, 255);
+    margin-left:2.9rem;
+    display: flex !important;
+    flex-basis: auto;
+    position:absolute;
+
+}

@@ -1,6 +1,7 @@
 ﻿<?php
 
-$conn = mysqli_connect("localhost", "root", "", "test");
+
+$conn = mysqli_connect("localhost", "root", "", "vor");
 
 
 if(!$conn){
@@ -8,15 +9,19 @@ if(!$conn){
 }
 
 
-$sql = "SELECT * FROM data";
+$sql = "SELECT * FROM datas";
 $query = mysqli_query($conn, $sql);
 
 
-if(isset($_REQUEST["new_post"])){
-    $title = $_REQUEST["title"];
-    $content = $_REQUEST["content"];
-    $sql = "INSERT INTO data(title, content) VALUES('$title', '$content')";
+if(isset($_REQUEST['new_post'])){
+    session_start();
+    $title = $_REQUEST['title'];
+    $content = $_REQUEST['content'];
+    $author = $_SESSION['username'];
+    $authorid = $_SESSION['id'];
+    $sql = "INSERT INTO datas(title, content, author, authorid) VALUES('$title', '$content', '$author', $authorid)";
     mysqli_query($conn, $sql);
+    echo $sql;
     header("Location: index.php?info=added");
     exit();
 }
